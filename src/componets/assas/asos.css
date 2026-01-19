@@ -1,0 +1,18 @@
+.test img{
+ width: 24%;
+ border-radius: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .test img {
+     width: 30%;
+    }
+    
+}
+@media (max-width: 600px) {
+    .test img {
+     width: 70%;
+    }
+    
+}

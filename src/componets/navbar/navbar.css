@@ -1,0 +1,24 @@
+.nav-item.dropdown:hover > .dropdown-menu {
+  display: block
+  
+
+}
+
+.nav-item a:hover {
+  text-decoration:  underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+.dropdown-menu {
+  top: 100%;
+  border-radius: 0;
+}
+
+.dropdown-menu a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav-item.dropdown > .nav-link {
+  cursor: pointer;
+}
