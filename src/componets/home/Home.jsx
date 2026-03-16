@@ -43,7 +43,7 @@ function Home() {
       <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
 
         <div className="">
-          <Link to="/Assas">
+          <Link to="/asos">
             <img
               src={Img}
               alt="char-intro"
@@ -51,7 +51,7 @@ function Home() {
             />
           </Link>
         </div>
-        <div className="first-t d-flex flex-column w-50 text-center text-md-start">
+        <div className="first-t d-flex flex-column w-100 w-md-50 text-center text-md-start">
           <h2>تصميم داخلي حصري مع استشارة شخصية</h2>
           <p>اعثر على منتجات فريدة وحقق أحلامك في تصميم الديكور الداخلي ✓</p>
           <Link
@@ -64,7 +64,7 @@ function Home() {
       <h2 className='text-center mb-4'>أهم الفئات</h2>
       <div className='row'>
         {categories.map((item, index) => (
-          <div key={index} className="col-6 col-md-3 text-center mb-4">
+          <div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2text-center mb-4">
             <Link to="/arak">
               <img src={item.img} alt={item.title} className="card img-fluid w-75" />
             </Link>
@@ -137,13 +137,15 @@ function Home() {
           </Link>
         </div>
       </div>
-       <div className='d-flex justify-content-center align-items-center'>
+       <div className='newsletter text-center mt-5 align-items-center'>
          <div>
            <p> اشترك في النشرة الإخبارية من هنا</p>
          </div>
-          <form action="" method="get">
-            <input type="text" name='news' id='ns' className='position-relative' placeholder='النشرة الاخبارية عبر البريد الاكترونى'/>
-            <button className='position-absolute bg-warning'>اشترك</button>
+          <form className="d-flex justify-content-center">
+            <input type="email"  className='position-relative'
+             placeholder='النشرة الاخبارية عبر البريد الاكترونى'
+             />
+            <button className='btn btn-warning ms-2'>اشترك</button>
           </form>
        </div>
     </div>

@@ -1,24 +1,40 @@
 .nav-item.dropdown:hover > .dropdown-menu {
-  display: block
-  
-
+  display: block;
 }
 
 .nav-item a:hover {
-  text-decoration:  underline;
+  text-decoration: underline;
   cursor: pointer;
   font-weight: bold;
 }
+
 .dropdown-menu {
   top: 100%;
   border-radius: 0;
 }
 
-.dropdown-menu a:hover{
+.dropdown-menu a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
 .nav-item.dropdown > .nav-link {
   cursor: pointer;
+}
+
+.logo-img {
+  width: 120px;   
+  height: auto;
+}
+
+.site-title {
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 0.9rem;
+    white-space: normal;
+  }
 }

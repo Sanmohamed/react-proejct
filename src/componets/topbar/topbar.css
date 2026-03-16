@@ -1,25 +1,33 @@
 
-
-.intr {
-    background-color: #c5b69b;
-
-}
-
-.intr .icon i {
-    color: black !important;  
-}  
-
-
-
-
-.intr select.form-select.form-select-sm {
-    background-color: transparent;
-    color: black;
-    border: none;
-    
+.topbar {
+  background-color: #c5b69b;
+  font-size: 0.85rem;
 }
 
 
-    
+.topbar .social-icons a {
+  color: #000;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.topbar .social-icons a:hover {
+  opacity: 0.7;
+}
 
 
+.topbar select.form-select-sm {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  box-shadow: none;
+  width: auto;
+  cursor: pointer;
+  padding-right: 18px;
+}
+
+
+.topbar select:focus {
+  box-shadow: none;
+  outline: none;
+}
