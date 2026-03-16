@@ -11,12 +11,15 @@ import CategoryPage from './componets/pages/CategoryPage';
 import CartPage from './componets/pages/CartPage';
 import CheckoutPage from './componets/pages/CheckoutPage';
 import MyOrders from './componets/pages/MyOrders';
-import Login from './componets/pages/login';
-import Register from './componets/pages/register';
+import Login from './componets/pages/Login';
+import Register from './componets/pages/Register';
 import ForgotPassword from './componets/pages/ForgotPassword';
 import AdminDashboard from './componets/pages/Adashboard';
 import AdminRoute from './componets/pages/AdminRoute';
 import FavoritesPage from './componets/pages/FavoritesPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   return (
@@ -26,8 +29,8 @@ function App() {
           <TopBar />
           <NavBar />
           <Routes>
-
             <Route path="/" element={<Home />} />
+
             <Route path="/cart" element={<CartPage />} />
             <Route path="/checkout" element={<CheckoutPage />} />
             <Route path="/myorders" element={<MyOrders />} />
